@@ -1,0 +1,50 @@
+Algoritmo DecirHola
+	// Esto es una prueba para ver cómo funciona
+	Definir nombre Como Caracter;  //Variable para el nombre del usuario
+	Definir contador Como Entero;  //Variable para los bucles
+	Escribir 'hola';
+	Leer nombre
+	Escribir 'Te llamas '+nombre
+	Si nombre='Antonio' Entonces
+		Escribir 'Uy, pues sí que te llamas Antonio'
+	SiNo
+		Escribir 'Ups, este programa es para Antonio, sal de aquí...!'
+	FinSi
+	
+
+	Para contador<-0 Hasta 10 Hacer
+		Escribir 'Nos damos vuelta, y estamos en la vuelta ',contador
+	FinPara
+	
+	Escribir 'vamos a por un while'
+	Mientras contador>0 Hacer
+		Escribir 'Ahora el contador es: ',contador
+		contador <- contador-1
+	FinMientras
+	
+	Escribir 'vamos a por un repeat'
+	Repetir
+		Escribir 'El contador ahora mismo al empezar es: ',contador
+		contador <- contador+1
+		Escribir 'El contador al acabar la vuelta es: ',contador
+	Hasta Que contador>10
+	
+	Escribir 'vamos a por un switch'
+	Segun contador  Hacer
+		0:
+			Escribir 'Es un CERO'
+		11:
+			Escribir 'Es un ONCE'
+			Escribir TestDeFuncion()
+		15:
+			Escribir 'Tracatrá'
+		'test':
+			Escribir 'sdfdfsdf'
+		De Otro Modo:
+			Escribir 'No tengo ni idea'
+	FinSegun
+FinAlgoritmo
+
+Funcion rdo <- TestDeFuncion()
+	rdo <- 'Esta es la función TestDeFuncion' + '2'
+FinFuncion
